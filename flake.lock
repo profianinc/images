@@ -1,0 +1,743 @@
+{
+  "nodes": {
+    "benefice-staging": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-OT1jnp1HESzbhx53FCk2aoqQxxfXwcApZCt1fUG5lxQ=",
+        "type": "file",
+        "url": "https://github.com/profianinc/benefice/releases/download/v0.1.0-rc11/benefice-x86_64-unknown-linux-musl"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/profianinc/benefice/releases/download/v0.1.0-rc11/benefice-x86_64-unknown-linux-musl"
+      }
+    },
+    "benefice-testing": {
+      "inputs": {
+        "cargo2nix": "cargo2nix",
+        "flake-compat": "flake-compat_2",
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": "nixpkgs",
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1658413878,
+        "narHash": "sha256-PdLxQC/S1nK2zu1mg2ejTqwaZXlRcpwppd2EEMQeDX4=",
+        "owner": "profianinc",
+        "repo": "benefice",
+        "rev": "d238c74c66e7c2db3389857b6299b66965b4363d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "profianinc",
+        "repo": "benefice",
+        "type": "github"
+      }
+    },
+    "cargo2nix": {
+      "inputs": {
+        "flake-compat": [
+          "infrastructure",
+          "benefice-testing",
+          "flake-compat"
+        ],
+        "flake-utils": [
+          "infrastructure",
+          "benefice-testing",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "infrastructure",
+          "benefice-testing",
+          "nixpkgs"
+        ],
+        "rust-overlay": [
+          "infrastructure",
+          "benefice-testing",
+          "rust-overlay"
+        ]
+      },
+      "locked": {
+        "lastModified": 1655189312,
+        "narHash": "sha256-gpJ57OgIebUpO+7F00VltxSEy6dz2x6HeJ5BcRM8rDA=",
+        "owner": "cargo2nix",
+        "repo": "cargo2nix",
+        "rev": "c149357cc3d17f2849c73eb7a09d07a307cdcfe8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cargo2nix",
+        "repo": "cargo2nix",
+        "type": "github"
+      }
+    },
+    "cargo2nix_2": {
+      "inputs": {
+        "flake-compat": [
+          "infrastructure",
+          "drawbridge-testing",
+          "flake-compat"
+        ],
+        "flake-utils": [
+          "infrastructure",
+          "drawbridge-testing",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "infrastructure",
+          "drawbridge-testing",
+          "nixpkgs"
+        ],
+        "rust-overlay": [
+          "infrastructure",
+          "drawbridge-testing",
+          "rust-overlay"
+        ]
+      },
+      "locked": {
+        "lastModified": 1655189312,
+        "narHash": "sha256-gpJ57OgIebUpO+7F00VltxSEy6dz2x6HeJ5BcRM8rDA=",
+        "owner": "cargo2nix",
+        "repo": "cargo2nix",
+        "rev": "c149357cc3d17f2849c73eb7a09d07a307cdcfe8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cargo2nix",
+        "repo": "cargo2nix",
+        "type": "github"
+      }
+    },
+    "deploy-rs": {
+      "inputs": {
+        "flake-compat": [
+          "infrastructure",
+          "flake-compat"
+        ],
+        "nixpkgs": "nixpkgs_2",
+        "utils": "utils"
+      },
+      "locked": {
+        "lastModified": 1653594315,
+        "narHash": "sha256-kJ0ENmnQJ4qL2FeYKZba9kvv1KmIuB3NVpBwMeI7AJQ=",
+        "owner": "serokell",
+        "repo": "deploy-rs",
+        "rev": "184349d8149436748986d1bdba087e4149e9c160",
+        "type": "github"
+      },
+      "original": {
+        "owner": "serokell",
+        "repo": "deploy-rs",
+        "type": "github"
+      }
+    },
+    "drawbridge-production": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-2oVHbCrSFeIkqvCQr4WKiDU3m2GTcy5aB+1fh8WPH+k=",
+        "type": "file",
+        "url": "https://github.com/profianinc/drawbridge/releases/download/v0.2.0/drawbridge-x86_64-unknown-linux-musl"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/profianinc/drawbridge/releases/download/v0.2.0/drawbridge-x86_64-unknown-linux-musl"
+      }
+    },
+    "drawbridge-staging": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-2oVHbCrSFeIkqvCQr4WKiDU3m2GTcy5aB+1fh8WPH+k=",
+        "type": "file",
+        "url": "https://github.com/profianinc/drawbridge/releases/download/v0.2.0/drawbridge-x86_64-unknown-linux-musl"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/profianinc/drawbridge/releases/download/v0.2.0/drawbridge-x86_64-unknown-linux-musl"
+      }
+    },
+    "drawbridge-testing": {
+      "inputs": {
+        "cargo2nix": "cargo2nix_2",
+        "flake-compat": "flake-compat_3",
+        "flake-utils": "flake-utils_3",
+        "nixpkgs": "nixpkgs_3",
+        "rust-overlay": "rust-overlay_2"
+      },
+      "locked": {
+        "lastModified": 1658246095,
+        "narHash": "sha256-S4I5wwsl0uvCb5WWAXBH812Zab+f9q+ct8l+egtPVHk=",
+        "owner": "profianinc",
+        "repo": "drawbridge",
+        "rev": "cf6efc6cc99a875bfe9a43ab0980fc5258763eb7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "profianinc",
+        "repo": "drawbridge",
+        "type": "github"
+      }
+    },
+    "enarx": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-INrXUBYLR2TCUUB7BaG18gEgYdqelfX0peHsoSb7WQA=",
+        "type": "file",
+        "url": "https://github.com/enarx/enarx/releases/download/v0.6.1/enarx-x86_64-unknown-linux-musl"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/enarx/enarx/releases/download/v0.6.1/enarx-x86_64-unknown-linux-musl"
+      }
+    },
+    "fenix": {
+      "inputs": {
+        "nixpkgs": [
+          "infrastructure",
+          "steward-testing",
+          "nixpkgs"
+        ],
+        "rust-analyzer-src": "rust-analyzer-src"
+      },
+      "locked": {
+        "lastModified": 1657175312,
+        "narHash": "sha256-ZOTtKbL2VDPYJzfKZfPQTx7UdRkIb32fkwU64UOOS+Q=",
+        "owner": "nix-community",
+        "repo": "fenix",
+        "rev": "c5933255cadd599e9d1b4b98d801c12a923ff9d8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "fenix",
+        "type": "github"
+      }
+    },
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650374568,
+        "narHash": "sha256-Z+s0J8/r907g149rllvwhb4pKi8Wam5ij0st8PwAh+E=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "b4a34015c698c7793d592d66adbab377907a2be8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-compat_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650374568,
+        "narHash": "sha256-Z+s0J8/r907g149rllvwhb4pKi8Wam5ij0st8PwAh+E=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "b4a34015c698c7793d592d66adbab377907a2be8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-compat_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650374568,
+        "narHash": "sha256-Z+s0J8/r907g149rllvwhb4pKi8Wam5ij0st8PwAh+E=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "b4a34015c698c7793d592d66adbab377907a2be8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-compat_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650374568,
+        "narHash": "sha256-Z+s0J8/r907g149rllvwhb4pKi8Wam5ij0st8PwAh+E=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "b4a34015c698c7793d592d66adbab377907a2be8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-compat_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650374568,
+        "narHash": "sha256-Z+s0J8/r907g149rllvwhb4pKi8Wam5ij0st8PwAh+E=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "b4a34015c698c7793d592d66adbab377907a2be8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1656928814,
+        "narHash": "sha256-RIFfgBuKz6Hp89yRr7+NR5tzIAbn52h8vT6vXkYjZoM=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "7e2a3b3dfd9af950a856d66b0a7d01e3c18aa249",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1656928814,
+        "narHash": "sha256-RIFfgBuKz6Hp89yRr7+NR5tzIAbn52h8vT6vXkYjZoM=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "7e2a3b3dfd9af950a856d66b0a7d01e3c18aa249",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_3": {
+      "locked": {
+        "lastModified": 1656928814,
+        "narHash": "sha256-RIFfgBuKz6Hp89yRr7+NR5tzIAbn52h8vT6vXkYjZoM=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "7e2a3b3dfd9af950a856d66b0a7d01e3c18aa249",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_4": {
+      "locked": {
+        "lastModified": 1656928814,
+        "narHash": "sha256-RIFfgBuKz6Hp89yRr7+NR5tzIAbn52h8vT6vXkYjZoM=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "7e2a3b3dfd9af950a856d66b0a7d01e3c18aa249",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_5": {
+      "locked": {
+        "lastModified": 1656928814,
+        "narHash": "sha256-RIFfgBuKz6Hp89yRr7+NR5tzIAbn52h8vT6vXkYjZoM=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "7e2a3b3dfd9af950a856d66b0a7d01e3c18aa249",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "infrastructure": {
+      "inputs": {
+        "benefice-staging": "benefice-staging",
+        "benefice-testing": "benefice-testing",
+        "deploy-rs": "deploy-rs",
+        "drawbridge-production": "drawbridge-production",
+        "drawbridge-staging": "drawbridge-staging",
+        "drawbridge-testing": "drawbridge-testing",
+        "enarx": "enarx",
+        "flake-compat": "flake-compat_4",
+        "flake-utils": "flake-utils_4",
+        "nixlib": "nixlib",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "sops-nix": "sops-nix",
+        "steward-production": "steward-production",
+        "steward-staging": "steward-staging",
+        "steward-testing": "steward-testing"
+      },
+      "locked": {
+        "lastModified": 1658835822,
+        "narHash": "sha256-q2XjoqH0cY79kFriiA6AZDCU10xrr65aWk/dykXN9v0=",
+        "owner": "profianinc",
+        "repo": "infrastructure",
+        "rev": "3f0b2ab4bdb1fc5fd347779fe1b0e9d3f255e8c5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "profianinc",
+        "repo": "infrastructure",
+        "type": "github"
+      }
+    },
+    "nixlib": {
+      "locked": {
+        "lastModified": 1658624354,
+        "narHash": "sha256-1mCjgw0VmWgsxq1w0Bd6yFsGQSp68q7iZO3EjzaZ6/Y=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "96a5084b9466c58b4a940d8c2eb104f8301f8045",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
+    "nixlib_2": {
+      "locked": {
+        "lastModified": 1658624354,
+        "narHash": "sha256-1mCjgw0VmWgsxq1w0Bd6yFsGQSp68q7iZO3EjzaZ6/Y=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "96a5084b9466c58b4a940d8c2eb104f8301f8045",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
+    "nixos-generators": {
+      "inputs": {
+        "nixlib": [
+          "nixlib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1657748715,
+        "narHash": "sha256-WecDwDY/hEcDQYzFnccCNa+5Umht0lfjx/d1qGDy/rQ=",
+        "owner": "nix-community",
+        "repo": "nixos-generators",
+        "rev": "3323b944d99b026aebfd8de439e001409dde067d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixos-generators",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1657180868,
+        "narHash": "sha256-pRGoBUIn35fa2ptlMiJ+0Tb4GhC0SQXMQLuIhIt7SHo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "0c82c6d29482b4e08c264288e0a4bc14d5d84e8e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-22_05": {
+      "locked": {
+        "lastModified": 1658634393,
+        "narHash": "sha256-VW7edeFzA9VU8gZPxPFGpoPsM2AQLYHKhA9H5+OYtno=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "2e14bc76ab41c60ba57fd57ff52badaa29d349f5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "release-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1648219316,
+        "narHash": "sha256-Ctij+dOi0ZZIfX5eMhgwugfvB+WZSrvVNAyAuANOsnQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "30d3d79b7d3607d56546dd2a6b49e156ba0ec634",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1657180881,
+        "narHash": "sha256-uwUxEXY3b6O3WhzDLT3EaZOk4bGE648Mxi5Q1zljh9Y=",
+        "owner": "profianinc",
+        "repo": "nixpkgs",
+        "rev": "a932f558a856d6f7c57223d554e110e9ba12e7c9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "profianinc",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1657180881,
+        "narHash": "sha256-uwUxEXY3b6O3WhzDLT3EaZOk4bGE648Mxi5Q1zljh9Y=",
+        "owner": "profianinc",
+        "repo": "nixpkgs",
+        "rev": "a932f558a856d6f7c57223d554e110e9ba12e7c9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "profianinc",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_5": {
+      "locked": {
+        "lastModified": 1658756391,
+        "narHash": "sha256-Fb/wIBt4sLROBep7+2+6FbxD9gC7PAuB2N80Q/bSNzI=",
+        "owner": "profianinc",
+        "repo": "nixpkgs",
+        "rev": "69e42da0a10d979b700b08ffa2fff91955980212",
+        "type": "github"
+      },
+      "original": {
+        "owner": "profianinc",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "flake-utils": "flake-utils",
+        "infrastructure": "infrastructure",
+        "nixlib": "nixlib_2",
+        "nixos-generators": "nixos-generators",
+        "nixpkgs": "nixpkgs_5"
+      }
+    },
+    "rust-analyzer-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657151932,
+        "narHash": "sha256-iql4MrFnUcbA0AY7Eo+jiOwdVo+b1Ts6AFOQMIriiwY=",
+        "owner": "rust-lang",
+        "repo": "rust-analyzer",
+        "rev": "c296e777675860164f8e45571efd29c4c08ee7cc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rust-lang",
+        "ref": "nightly",
+        "repo": "rust-analyzer",
+        "type": "github"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "flake-utils": [
+          "infrastructure",
+          "benefice-testing",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "infrastructure",
+          "benefice-testing",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1657162416,
+        "narHash": "sha256-5HckhpteVHcb++qPFw8L9bHd/B1EAzQxDeAPXAKML70=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "b1b998b47b15bc5e18a1b364c9c4f145bb0a3931",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_2": {
+      "inputs": {
+        "flake-utils": [
+          "infrastructure",
+          "drawbridge-testing",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "infrastructure",
+          "drawbridge-testing",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1657162416,
+        "narHash": "sha256-5HckhpteVHcb++qPFw8L9bHd/B1EAzQxDeAPXAKML70=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "b1b998b47b15bc5e18a1b364c9c4f145bb0a3931",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_3": {
+      "inputs": {
+        "flake-utils": [
+          "infrastructure",
+          "steward-testing",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "infrastructure",
+          "steward-testing",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1657162416,
+        "narHash": "sha256-5HckhpteVHcb++qPFw8L9bHd/B1EAzQxDeAPXAKML70=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "b1b998b47b15bc5e18a1b364c9c4f145bb0a3931",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "sops-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "infrastructure",
+          "nixpkgs"
+        ],
+        "nixpkgs-22_05": "nixpkgs-22_05"
+      },
+      "locked": {
+        "lastModified": 1658635258,
+        "narHash": "sha256-EC8y3Rg+l9IzIUdOaFSA0LMdDipTRoweg1Y2EL8XhMc=",
+        "owner": "Mic92",
+        "repo": "sops-nix",
+        "rev": "d7f8cf1b77ebe5f287884f17b1ee4cc4f48bad1d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mic92",
+        "repo": "sops-nix",
+        "type": "github"
+      }
+    },
+    "steward-production": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-//9IAOeuelgzK/Izef+U0R1PFgWcU3LSLxytnBGAfnk=",
+        "type": "file",
+        "url": "https://github.com/profianinc/steward/releases/download/v0.1.0/steward-x86_64-unknown-linux-musl"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/profianinc/steward/releases/download/v0.1.0/steward-x86_64-unknown-linux-musl"
+      }
+    },
+    "steward-staging": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-//9IAOeuelgzK/Izef+U0R1PFgWcU3LSLxytnBGAfnk=",
+        "type": "file",
+        "url": "https://github.com/profianinc/steward/releases/download/v0.1.0/steward-x86_64-unknown-linux-musl"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/profianinc/steward/releases/download/v0.1.0/steward-x86_64-unknown-linux-musl"
+      }
+    },
+    "steward-testing": {
+      "inputs": {
+        "fenix": "fenix",
+        "flake-compat": "flake-compat_5",
+        "flake-utils": "flake-utils_5",
+        "nixpkgs": "nixpkgs_4",
+        "rust-overlay": "rust-overlay_3"
+      },
+      "locked": {
+        "lastModified": 1657194171,
+        "narHash": "sha256-TphAi57qbrMJhtE0SFB/Z/PLekp2jE0uEjp3zvBWi0k=",
+        "owner": "profianinc",
+        "repo": "steward",
+        "rev": "692ac758eb1ae4a19e32821e4fdc208d73f48cdc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "profianinc",
+        "repo": "steward",
+        "type": "github"
+      }
+    },
+    "utils": {
+      "locked": {
+        "lastModified": 1648297722,
+        "narHash": "sha256-W+qlPsiZd8F3XkzXOzAoR+mpFqzm3ekQkJNa+PIh1BQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "0f8662f1319ad6abf89b3380dd2722369fc51ade",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
