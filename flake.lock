@@ -3,13 +3,13 @@
     "benefice-staging": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-OT1jnp1HESzbhx53FCk2aoqQxxfXwcApZCt1fUG5lxQ=",
+        "narHash": "sha256-HIDhrUWbltjKV+eMRQLwizPSqhEhcP1HU1ITD3Vt5BQ=",
         "type": "file",
-        "url": "https://github.com/profianinc/benefice/releases/download/v0.1.0-rc11/benefice-x86_64-unknown-linux-musl"
+        "url": "https://github.com/profianinc/benefice/releases/download/v0.1.0-rc13/benefice-x86_64-unknown-linux-musl"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/profianinc/benefice/releases/download/v0.1.0-rc11/benefice-x86_64-unknown-linux-musl"
+        "url": "https://github.com/profianinc/benefice/releases/download/v0.1.0-rc13/benefice-x86_64-unknown-linux-musl"
       }
     },
     "benefice-testing": {
@@ -21,11 +21,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1658413878,
-        "narHash": "sha256-PdLxQC/S1nK2zu1mg2ejTqwaZXlRcpwppd2EEMQeDX4=",
+        "lastModified": 1658853299,
+        "narHash": "sha256-un6h9chSjzZa369fb4zgQzPNiVuRyTaBf/cz4R/AqII=",
         "owner": "profianinc",
         "repo": "benefice",
-        "rev": "d238c74c66e7c2db3389857b6299b66965b4363d",
+        "rev": "d8107419769f7cd9f08d366332f888ec58bce839",
         "type": "github"
       },
       "original": {
@@ -388,11 +388,11 @@
         "steward-testing": "steward-testing"
       },
       "locked": {
-        "lastModified": 1658835822,
-        "narHash": "sha256-q2XjoqH0cY79kFriiA6AZDCU10xrr65aWk/dykXN9v0=",
+        "lastModified": 1658855912,
+        "narHash": "sha256-3OC2gfER5QjPhLXXdc4szqmsUQBB4qzdSGTs1zXOeBE=",
         "owner": "profianinc",
         "repo": "infrastructure",
-        "rev": "3f0b2ab4bdb1fc5fd347779fe1b0e9d3f255e8c5",
+        "rev": "542973da97e1f81dfeeea09edaf0391b01b39252",
         "type": "github"
       },
       "original": {
@@ -533,11 +533,11 @@
     },
     "nixpkgs_5": {
       "locked": {
-        "lastModified": 1658756391,
-        "narHash": "sha256-Fb/wIBt4sLROBep7+2+6FbxD9gC7PAuB2N80Q/bSNzI=",
+        "lastModified": 1658855199,
+        "narHash": "sha256-gW1aGWM4DiD3JrSqELaW8APtf/wCP4GmOe+GcxU71xg=",
         "owner": "profianinc",
         "repo": "nixpkgs",
-        "rev": "69e42da0a10d979b700b08ffa2fff91955980212",
+        "rev": "947421446f500363f82d47a1ef60316c052ee1b6",
         "type": "github"
       },
       "original": {
