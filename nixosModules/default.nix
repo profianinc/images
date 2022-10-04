@@ -1,7 +1,6 @@
 {...}: {
   amazon = {...}: {
     amazonImage.sizeMB = 12 * 1024; # TODO: Figure out how much we actually need
-    ec2.ena = false;
   };
 
   docker = {lib, ...}: {
