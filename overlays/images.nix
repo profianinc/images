@@ -48,7 +48,6 @@ inputs @ {
   enarx-sev-amazon = final.mkEnarxSevImage "amazon" [self.nixosModules.amazon];
   enarx-sev-azure = final.mkEnarxSevImage "azure" [];
   enarx-sev-docker = final.mkEnarxSevImage "docker" [self.nixosModules.docker];
-  enarx-sev-gce = final.mkEnarxSevImage "gce" [];
   enarx-sev-hyperv = final.mkEnarxSevImage "hyperv" [];
   enarx-sev-install-iso = final.mkEnarxSevImage "install-iso" [self.nixosModules.iso];
   enarx-sev-install-iso-hyperv = final.mkEnarxSevImage "install-iso-hyperv" [self.nixosModules.iso];
@@ -82,7 +81,6 @@ inputs @ {
   enarx-sgx-amazon = final.mkEnarxSgxImage "amazon" [self.nixosModules.amazon];
   enarx-sgx-azure = final.mkEnarxSgxImage "azure" [];
   enarx-sgx-docker = final.mkEnarxSgxImage "docker" [self.nixosModules.docker];
-  enarx-sgx-gce = final.mkEnarxSgxImage "gce" [];
   enarx-sgx-hyperv = final.mkEnarxSgxImage "hyperv" [];
   enarx-sgx-install-iso = final.mkEnarxSgxImage "install-iso" [self.nixosModules.iso];
   enarx-sgx-install-iso-hyperv = final.mkEnarxSgxImage "install-iso-hyperv" [self.nixosModules.iso];
@@ -101,7 +99,6 @@ in {
     enarx-sev-amazon
     enarx-sev-azure
     enarx-sev-docker
-    enarx-sev-gce
     enarx-sev-hyperv
     enarx-sev-install-iso
     enarx-sev-install-iso-hyperv
@@ -115,7 +112,6 @@ in {
     enarx-sgx-amazon
     enarx-sgx-azure
     enarx-sgx-docker
-    enarx-sgx-gce
     enarx-sgx-hyperv
     enarx-sgx-install-iso
     enarx-sgx-install-iso-hyperv
