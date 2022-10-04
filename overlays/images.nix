@@ -10,8 +10,9 @@ inputs @ {
       pkgs = final;
       modules =
         [
-          infrastructure.nixosModules.common
           ({pkgs, ...}: {
+            documentation.nixos.enable = false;
+
             environment.systemPackages = with pkgs; [enarx];
 
             networking.firewall.allowedTCPPorts = [
@@ -19,9 +20,14 @@ inputs @ {
               443
             ];
 
+            nix.package = pkgs.nixUnstable;
             nixpkgs.overlays = [infrastructure.overlays.service];
 
             services.enarx.enable = true;
+
+            system.stateVersion = "22.05";
+
+            time.timeZone = "Etc/UTC";
           })
         ]
         ++ modules;
