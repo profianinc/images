@@ -1,5 +1,6 @@
 {...}: {
   amazon = {...}: {
+    amazonImage.name = "nixos-enarx-test";
     amazonImage.sizeMB = 12 * 1024; # TODO: Figure out how much we actually need
   };
 
