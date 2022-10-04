@@ -50,7 +50,6 @@
                 enarx-sev-amazon
                 enarx-sev-docker
                 enarx-sev-hyperv
-                enarx-sev-gce
                 enarx-sev-kubevirt
                 enarx-sev-lxc
                 enarx-sev-lxc-metadata
@@ -68,7 +67,6 @@
                 enarx-sgx-amazon
                 enarx-sgx-azure
                 enarx-sgx-docker
-                enarx-sgx-gce
                 enarx-sgx-hyperv
                 enarx-sgx-install-iso
                 enarx-sgx-install-iso-hyperv
