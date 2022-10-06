@@ -7,7 +7,7 @@ inputs @ {
   mkEnarxImage = format: modules:
     nixos-generators.nixosGenerate {
       inherit format;
-      pkgs = final;
+      system = "x86_64-linux";
       modules =
         [
           ({pkgs, ...}: {
@@ -36,15 +36,14 @@ inputs @ {
   mkEnarxSevImage = format: modules:
     mkEnarxImage format ([
         {
-          boot.kernelModules = [
-            "kvm-amd"
-          ];
           boot.kernelPackages = final.linuxPackages_enarx;
 
           hardware.cpu.amd.sev.enable = true;
           hardware.cpu.amd.sev.mode = "0777";
 
           hardware.cpu.amd.updateMicrocode = true;
+
+          hardware.firmware = [final.linux-firmware];
 
           services.enarx.backend = "sev";
         }
